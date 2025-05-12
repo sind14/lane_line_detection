@@ -31,12 +31,9 @@ def visualize_predictions(model, loader, title=""):
     true_masks = true_masks.cpu()
     pred_masks = pred_masks.cpu()
 
-    num_samples = min(4, len(images))
+    num_samples = 4
     fig, axes = plt.subplots(num_samples, 3, figsize=(10, 3 * num_samples))
     fig.suptitle(title, fontsize=16)
-
-    if num_samples == 1:
-        axes = [axes]
 
     for i in range(num_samples):
         ax_img, ax_true, ax_pred = axes[i] if num_samples > 1 else axes[0]
