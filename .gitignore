@@ -1,9 +1,41 @@
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pth
+*.py[cod]
+*$py.class
+
+# C Extensions
+*.so
+
+# PyCharm
+.idea/
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and outputs
 *.log
-*.ckpt
+*.out
+
+# Model weights / results
 *.pth
+*.pt
+checkpoints/
 outputs/
-*.ipynb_checkpoints
+
+# Datasets
+data/
+*.csv
+*.tsv
+*.json
+*.zip
+
+# Cache
+*.cache
+.cache/
+*.pkl
